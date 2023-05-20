@@ -2,10 +2,130 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
-body {
-  background-color: #eee;
+
+.first-header {
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 35px;
 }
+
+.first-header .first-list ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  margin: 0 3rem;
+}
+
+.first-header .first-list ul li {
+  margin: 0 1rem;
+  color: #7c7979;
+  cursor: pointer;
+}
+
+.first-header .first-list ul li:hover {
+  text-decoration: underline;
+}
+
+.first-header .second-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.first-header .second-list .drop-list .head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin: 0 10px;
+  padding: 5px;
+}
+.first-header .second-list .drop-list .head i {
+  margin-left: 5px;
+}
+
+.first-header .second-list .drop-list {
+  position: relative;
+}
+
+.first-header .second-list .drop-list .list {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #f5f5f5;
+  right: 9px;
+  width: 85%;
+  display: none;
+  z-index: 10;
+}
+
+.first-header .second-list .drop-list:hover .list {
+  display: flex;
+}
+
+.first-header .second-list .drop-list .list a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  border-bottom: 1px solid #333131;
+}
+
+/* logoheader */
+.second-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.second-header .logo {
+  font-size: 35px;
+  display: flex;
+  margin: 10px;
+}
+
+.second-header .logo .first {
+  background-color: #333131;
+  color: #fee135;
+  padding: 0 10px;
+}
+
+.second-header .logo .second {
+  background-color: #fee135;
+  color: #333131;
+  padding: 0 10px;
+}
+
+.second-header form {
+  border: 1px solid #f5f5f5;
+  padding: 0 5px;
+}
+
+.second-header form input {
+  width: 300px;
+  padding: 5px;
+  border: none;
+  outline: none;
+}
+
+.second-header form i {
+  border-left: 1px solid #f5f5f5;
+  padding: 10px;
+  color: #fee135;
+}
+
+.second-header .contact .text {
+  color: #7c7979;
+  font-size: 12px;
+  text-align: center;
+}
+/* main header */
+
 nav {
   height: 70px;
   background-color: #333131;
@@ -131,4 +251,51 @@ nav {
 .links ul li:hover {
   background-color: #fee135;
   color: black;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+  .first-header .first-list {
+    display: none;
+  }
+  .first-header .second-list {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .links {
+    display: none;
+  }
+  .header {
+    background-color: transparent;
+    color: white;
+    width: 100%;
+    margin: 1rem;
+  }
+  .header .cat {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 20px;
+    padding-right: 0;
+  }
+
+  .bar {
+    font-size: 20px;
+    border: 1px solid white;
+    padding: 9px;
+    border-radius: 3px;
+  }
+
+  .header .aa {
+    display: none;
+  }
+
+  .header:hover .menu-bar {
+    display: none;
+  }
 }
