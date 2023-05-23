@@ -7,6 +7,7 @@
 
 body {
   background-color: #eee;
+  width: 100%;
 }
 
 .first-header {
@@ -94,6 +95,10 @@ body {
   margin: 10px;
 }
 
+.second-header .bar1 {
+  display: none;
+}
+
 .second-header .logo .first {
   background-color: #333131;
   color: #fee135;
@@ -165,9 +170,6 @@ nav {
 
 .header i {
   cursor: pointer;
-}
-
-.header .menu-bar {
 }
 
 .header .menu {
@@ -259,7 +261,7 @@ nav {
 .hero {
   margin: 10px;
   display: grid;
-  grid-template-areas: "a a a a b";
+  grid-template-areas: "a a b";
 }
 
 .hero .carousel {
@@ -275,7 +277,7 @@ nav {
 
 .hero .carousel img {
   width: 100%;
-  height: 400px;
+  height: 410px;
   opacity: 0.8;
 }
 
@@ -341,12 +343,22 @@ nav {
 
 .hero .offers .offer {
   position: relative;
+  height: 200px;
+  overflow: hidden;
+  margin-bottom: 10px;
 }
 
 .hero .offers img {
-  width: 100%;
-  height: 200px;
+  height: 100%;
   opacity: 0.8;
+  object-fit: cover;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.hero .offers .offer:hover img {
+  transform: scale(1.2) rotate(5deg);
+  transition: 0.5s;
 }
 
 .hero .offers .offer .overlay {
@@ -399,7 +411,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2rem 2rem;
+  margin: 2rem 1rem;
 }
 
 .features div {
@@ -418,9 +430,91 @@ nav {
   font-size: 30px;
 }
 
+/* CATEGORIES */
+.category .title {
+  margin: 1rem 3rem;
+  color: #6c757d;
+}
+
+.category .title h1 {
+  position: relative;
+  font-size: 30px;
+}
+
+.category .title span {
+  background-color: #eee;
+  padding-right: 1rem;
+}
+
+.category .title h1 span::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  top: 50%;
+  left: 0;
+  border-top: 1px dashed #bec5cb;
+  z-index: -1;
+}
+
+.categories {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.categories .product {
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100px;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+.categories .product .image {
+  overflow: hidden;
+  height: 100%;
+  margin-right: 1rem;
+}
+
+.categories .product .image img {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+.categories .product:hover .image img {
+  transform: scale(1.2) rotate(5deg);
+  transition: 0.5s;
+}
+
+.categories .product:hover {
+  background-color: #fee135;
+  transition: 0.5s;
+}
+
+.categories .product h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #3d464d;
+}
+
+.categories .product p {
+  font-size: 13px;
+  font-weight: 400;
+  color: #6c757d;
+  margin-top: 10px;
+}
+
+.menu {
+  display: none;
+}
 /* Responsive */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .first-header .first-list {
     display: none;
   }
@@ -430,37 +524,84 @@ nav {
     width: 100%;
   }
 
-  .links {
+  .second-header {
+    background-color: #3d464d;
+    position: relative;
+  }
+
+  .second-header .bar1 {
+    display: block;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 5px 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .second-header .menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    list-style: none;
+    background-color: #3d464d;
+    z-index: 1000;
+    padding: 10px;
+  }
+
+  .second-header .menu li {
+    padding: 10px;
+    color: #eee;
+  }
+
+  .second-header .bar1:hover + .menu {
+    display: block;
+  }
+
+  nav {
     display: none;
   }
-  .header {
-    background-color: transparent;
-    color: white;
+
+  .second-header form {
+    display: none;
+  }
+
+  .second-header .contact {
+    display: none;
+  }
+
+  .hero {
+    grid-template-areas: "a" "b";
+    gap: 20px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .hero .carousel {
+    width: 100%;
+    margin: 0;
+  }
+
+  .features {
+    flex-wrap: wrap;
+    width: 100%;
+
+    text-align: center;
+  }
+
+  .features div {
     width: 100%;
     margin: 1rem;
   }
-  .header .cat {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    font-size: 20px;
-    padding-right: 0;
+
+  .categories {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .bar {
-    font-size: 20px;
-    border: 1px solid white;
-    padding: 9px;
-    border-radius: 3px;
+  .categories .prod-content h3 {
+    font-size: smaller;
   }
-
-  .header .aa {
-    display: none;
-  }
-
-  .header:hover .menu-bar {
-    display: none;
+  .categories .prod-content p {
+    font-size: smaller;
   }
 }
