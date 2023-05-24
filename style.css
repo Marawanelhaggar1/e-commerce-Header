@@ -444,10 +444,10 @@ nav {
 /* Features */
 
 .features {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 2rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+  margin: 0 1rem;
 }
 
 .features div {
@@ -456,8 +456,6 @@ nav {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-right: 20px;
-  width: 100%;
 }
 
 .features div i {
@@ -616,18 +614,7 @@ nav {
   }
 
   .features {
-    flex-wrap: wrap;
-    width: 100%;
-
-    text-align: center;
-  }
-
-  .features div {
-    width: 100%;
-    margin: 1rem;
-  }
-
-  .categories {
+    margin: 0 10px;
   }
 
   .categories .prod-content h3 {
