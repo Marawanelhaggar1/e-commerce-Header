@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -13,23 +18,92 @@
     <title>e-commerce Header</title>
   </head>
   <body>
+    <div class="first-header">
+      <div class="first-list">
+        <ul>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Help</li>
+          <li>FAQs</li>
+        </ul>
+      </div>
+      <div class="second-list">
+        <div class="drop-list">
+          <div class="head">
+            <p>My Account</p>
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+
+          <div class="list">
+            <a href="#">Sign in</a>
+            <a href="#">Sign out</a>
+          </div>
+        </div>
+        <div class="drop-list">
+          <div class="head">
+            <p>Currency</p>
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+
+          <div class="list">
+            <a href="#">USD</a>
+            <a href="#">EGP</a>
+          </div>
+        </div>
+        <div class="drop-list">
+          <div class="head">
+            <p>Language</p>
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+
+          <div class="list">
+            <a href="#">Arabic</a>
+            <a href="#">English</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="second-header">
+      <div class="logo">
+        <p class="first">MULTI</p>
+        <span class="second">SHOP</span>
+      </div>
+
+      <i class="fa-solid fa-bars bar1"></i>
+
+      <ul class="menu">
+        <li>Category 1</li>
+        <li>Category 2</li>
+        <li>Category 3</li>
+        <li>Category 4</li>
+        <li>Category 5</li>
+      </ul>
+      <form method="post">
+        <input type="search" placeholder="search for products" />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </form>
+
+      <div class="contact">
+        <p class="text">Customer Service</p>
+        <p class="number">+012 345 6789</p>
+      </div>
+    </div>
+
     <nav>
       <div class="header">
         <div class="cat">
-          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars bar"></i>
           <span>Category</span>
         </div>
-        <i class="fa-solid fa-chevron-down"></i>
-        <div class="menu-bar">
-          <div class="arrow"></div>
-          <ul class="menu">
-            <li>Category 1</li>
-            <li>Category 2</li>
-            <li>Category 3</li>
-            <li>Category 4</li>
-            <li>Category 5</li>
-          </ul>
-        </div>
+        <i class="fa-solid fa-chevron-down aa"></i>
+        <ul class="menu">
+          <li>Category 1</li>
+          <li>Category 2</li>
+          <li>Category 3</li>
+          <li>Category 4</li>
+          <li>Category 5</li>
+        </ul>
       </div>
 
       <div class="links">
@@ -41,6 +115,10 @@
             <div class="pages">
               <p>pages</p>
               <i class="fa-solid fa-chevron-down"></i>
+              <div class="payment">
+                <a href="#">Shopping Cart</a>
+                <a href="#">Checkout</a>
+              </div>
             </div>
           </li>
           <li>Contact</li>
@@ -58,5 +136,684 @@
         </div>
       </div>
     </nav>
+
+    <section class="hero">
+      <div class="carousel">
+        <div class="slide fade" id="slide">
+          <img src="./image/carousel-1.jpg" alt="1" />
+          <div class="overlay">
+            <h2>Men Fashion</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque
+              animi aperiam rerum, esse libero enim modi.
+            </p>
+            <button type="button">Shop Now</button>
+          </div>
+        </div>
+        <div class="slide fade" id="slide">
+          <img src="./image/carousel-2.jpg" alt="2" />
+          <div class="overlay">
+            <h2>Women Fashion</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque
+              animi aperiam rerum, esse libero enim modi.
+            </p>
+            <button type="button">Shop Now</button>
+          </div>
+        </div>
+        <div class="slide fade" id="slide">
+          <img src="./image/carousel-3.jpg" alt="3" />
+          <div class="overlay">
+            <h2>Kids Fashion</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque
+              animi aperiam rerum, esse libero enim modi.
+            </p>
+            <button type="button">Shop Now</button>
+          </div>
+        </div>
+
+        <div class="squares">
+          <i class="fa-solid fa-square square"></i>
+          <i class="fa-solid fa-square square"></i>
+          <i class="fa-solid fa-square square"></i>
+        </div>
+      </div>
+      <div class="offers">
+        <div class="offer fade">
+          <img src="./image/offer-1.jpg" alt="1" />
+          <div class="overlay">
+            <p>Save 20%</p>
+            <h2>Special Offer</h2>
+            <button type="button">Shop Now</button>
+          </div>
+        </div>
+        <div class="offer fade">
+          <img src="./image/offer-2.jpg" alt="2" />
+          <div class="overlay">
+            <p>Save 20%</p>
+            <h2>Special Offer</h2>
+            <button type="button">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div>
+        <i class="fa-solid fa-check"></i>
+        <p>Quality Product</p>
+      </div>
+      <div>
+        <i class="fa-solid fa-truck-fast"></i>
+        <p>Free Shiping</p>
+      </div>
+      <div>
+        <i class="fa-solid fa-right-left"></i>
+        <p>14-Day Return</p>
+      </div>
+      <div>
+        <i class="fa-solid fa-phone-volume"></i>
+        <p>24/7 Support</p>
+      </div>
+    </section>
+
+    <section class="category">
+      <div class="title">
+        <h1><span>CATEGORY</span></h1>
+      </div>
+      <div class="categories">
+        <div class="product">
+          <div class="image">
+            <img src="./image/cat-1.jpg" alt="1" />
+          </div>
+          <div class="prod-content">
+            <h3>Category Name</h3>
+            <p>100 products</p>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="image">
+            <img src="./image/cat-2.jpg" alt="1" />
+          </div>
+          <div class="prod-content">
+            <h3>Category Name</h3>
+            <p>100 products</p>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="image">
+            <img src="./image/cat-3.jpg" alt="1" />
+          </div>
+          <div class="prod-content">
+            <h3>Category Name</h3>
+            <p>100 products</p>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="image">
+            <img src="./image/cat-4.jpg" alt="1" />
+          </div>
+          <div class="prod-content">
+            <h3>Category Name</h3>
+            <p>100 products</p>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="image">
+            <img src="./image/cat-2.jpg" alt="1" />
+          </div>
+          <div class="prod-content">
+            <h3>Category Name</h3>
+            <p>100 products</p>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="image">
+            <img src="./image/cat-1.jpg" alt="1" />
+          </div>
+          <div class="prod-content">
+            <h3>Category Name</h3>
+            <p>100 products</p>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="image">
+            <img src="./image/cat-4.jpg" alt="1" />
+          </div>
+          <div class="prod-content">
+            <h3>Category Name</h3>
+            <p>100 products</p>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="image">
+            <img src="./image/cat-3.jpg" alt="1" />
+          </div>
+          <div class="prod-content">
+            <h3>Category Name</h3>
+            <p>100 products</p>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="image">
+            <img src="./image/cat-2.jpg" alt="1" />
+          </div>
+          <div class="prod-content">
+            <h3>Category Name</h3>
+            <p>100 products</p>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="image">
+            <img src="./image/cat-1.jpg" alt="1" />
+          </div>
+          <div class="prod-content">
+            <h3>Category Name</h3>
+            <p>100 products</p>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="image">
+            <img src="./image/cat-4.jpg" alt="1" />
+          </div>
+          <div class="prod-content">
+            <h3>Category Name</h3>
+            <p>100 products</p>
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="image">
+            <img src="./image/cat-3.jpg" alt="1" />
+          </div>
+          <div class="prod-content">
+            <h3>Category Name</h3>
+            <p>100 products</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="FEATURED-PRODUCTS">
+      <div class="title">
+        <h1><span>FEATURED PRODUCTS</span></h1>
+      </div>
+      <section class="products">
+        <div class="card">
+          <div class="image">
+            <div class="overlay-actions">
+              <div class="overlay"></div>
+              <div class="prod-actions">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-repeat"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </div>
+            <img src="./image/product-7.jpg" alt="1" />
+          </div>
+          <div class="card-info">
+            <p class="prod-name">Product Name Goes Here</p>
+            <p class="prod-price">$123 <span>$150</span></p>
+            <p class="prod-review">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(99)</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image">
+            <div class="overlay-actions">
+              <div class="overlay"></div>
+              <div class="prod-actions">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-repeat"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </div>
+            <img src="./image/product-2.jpg" alt="1" />
+          </div>
+          <div class="card-info">
+            <p class="prod-name">Product Name Goes Here</p>
+            <p class="prod-price">$123 <span>$150</span></p>
+            <p class="prod-review">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(99)</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image">
+            <div class="overlay-actions">
+              <div class="overlay"></div>
+              <div class="prod-actions">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-repeat"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </div>
+
+            <img src="./image/product-6.jpg" alt="1" />
+          </div>
+          <div class="card-info">
+            <p class="prod-name">Product Name Goes Here</p>
+            <p class="prod-price">$123 <span>$150</span></p>
+            <p class="prod-review">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(99)</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image">
+            <div class="overlay-actions">
+              <div class="overlay"></div>
+              <div class="prod-actions">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-repeat"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </div>
+            <img src="./image/product-5.jpg" alt="1" />
+          </div>
+          <div class="card-info">
+            <p class="prod-name">Product Name Goes Here</p>
+            <p class="prod-price">$123 <span>$150</span></p>
+            <p class="prod-review">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(99)</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image">
+            <div class="overlay-actions">
+              <div class="overlay"></div>
+              <div class="prod-actions">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-repeat"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </div>
+            <img src="./image/product-4.jpg" alt="1" />
+          </div>
+          <div class="card-info">
+            <p class="prod-name">Product Name Goes Here</p>
+            <p class="prod-price">$123 <span>$150</span></p>
+            <p class="prod-review">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(99)</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image">
+            <div class="overlay-actions">
+              <div class="overlay"></div>
+              <div class="prod-actions">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-repeat"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </div>
+            <img src="./image/product-1.jpg" alt="1" />
+          </div>
+          <div class="card-info">
+            <p class="prod-name">Product Name Goes Here</p>
+            <p class="prod-price">$123 <span>$150</span></p>
+            <p class="prod-review">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(99)</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image">
+            <div class="overlay-actions">
+              <div class="overlay"></div>
+              <div class="prod-actions">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-repeat"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </div>
+            <img src="./image/product-8.jpg" alt="1" />
+          </div>
+          <div class="card-info">
+            <p class="prod-name">Product Name Goes Here</p>
+            <p class="prod-price">$123 <span>$150</span></p>
+            <p class="prod-review">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(99)</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image">
+            <div class="overlay-actions">
+              <div class="overlay"></div>
+              <div class="prod-actions">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-repeat"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </div>
+            <img src="./image/product-3.jpg" alt="1" />
+          </div>
+          <div class="card-info">
+            <p class="prod-name">Product Name Goes Here</p>
+            <p class="prod-price">$123 <span>$150</span></p>
+            <p class="prod-review">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(99)</span>
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section class="offers2">
+      <div class="offers">
+        <div class="offer fade">
+          <img src="./image/offer-1.jpg" alt="1" />
+          <div class="overlay">
+            <p>Save 20%</p>
+            <h2>Special Offer</h2>
+            <button type="button">Shop Now</button>
+          </div>
+        </div>
+        <div class="offer fade">
+          <img src="./image/offer-2.jpg" alt="2" />
+          <div class="overlay">
+            <p>Save 20%</p>
+            <h2>Special Offer</h2>
+            <button type="button">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="FEATURED-PRODUCTS">
+      <div class="title">
+        <h1><span>RECENT PRODUCTS </span></h1>
+      </div>
+      <section class="products">
+        <div class="card">
+          <div class="image">
+            <div class="overlay-actions">
+              <div class="overlay"></div>
+              <div class="prod-actions">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-repeat"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </div>
+            <img src="./image/product-7.jpg" alt="1" />
+          </div>
+          <div class="card-info">
+            <p class="prod-name">Product Name Goes Here</p>
+            <p class="prod-price">$123 <span>$150</span></p>
+            <p class="prod-review">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(99)</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image">
+            <div class="overlay-actions">
+              <div class="overlay"></div>
+              <div class="prod-actions">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-repeat"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </div>
+            <img src="./image/product-2.jpg" alt="1" />
+          </div>
+          <div class="card-info">
+            <p class="prod-name">Product Name Goes Here</p>
+            <p class="prod-price">$123 <span>$150</span></p>
+            <p class="prod-review">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(99)</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image">
+            <div class="overlay-actions">
+              <div class="overlay"></div>
+              <div class="prod-actions">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-repeat"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </div>
+
+            <img src="./image/product-6.jpg" alt="1" />
+          </div>
+          <div class="card-info">
+            <p class="prod-name">Product Name Goes Here</p>
+            <p class="prod-price">$123 <span>$150</span></p>
+            <p class="prod-review">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(99)</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image">
+            <div class="overlay-actions">
+              <div class="overlay"></div>
+              <div class="prod-actions">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-repeat"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </div>
+            <img src="./image/product-5.jpg" alt="1" />
+          </div>
+          <div class="card-info">
+            <p class="prod-name">Product Name Goes Here</p>
+            <p class="prod-price">$123 <span>$150</span></p>
+            <p class="prod-review">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(99)</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image">
+            <div class="overlay-actions">
+              <div class="overlay"></div>
+              <div class="prod-actions">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-repeat"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </div>
+            <img src="./image/product-4.jpg" alt="1" />
+          </div>
+          <div class="card-info">
+            <p class="prod-name">Product Name Goes Here</p>
+            <p class="prod-price">$123 <span>$150</span></p>
+            <p class="prod-review">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(99)</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image">
+            <div class="overlay-actions">
+              <div class="overlay"></div>
+              <div class="prod-actions">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-repeat"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </div>
+            <img src="./image/product-1.jpg" alt="1" />
+          </div>
+          <div class="card-info">
+            <p class="prod-name">Product Name Goes Here</p>
+            <p class="prod-price">$123 <span>$150</span></p>
+            <p class="prod-review">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(99)</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image">
+            <div class="overlay-actions">
+              <div class="overlay"></div>
+              <div class="prod-actions">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-repeat"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </div>
+            <img src="./image/product-8.jpg" alt="1" />
+          </div>
+          <div class="card-info">
+            <p class="prod-name">Product Name Goes Here</p>
+            <p class="prod-price">$123 <span>$150</span></p>
+            <p class="prod-review">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(99)</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="image">
+            <div class="overlay-actions">
+              <div class="overlay"></div>
+              <div class="prod-actions">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-repeat"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </div>
+            <img src="./image/product-3.jpg" alt="1" />
+          </div>
+          <div class="card-info">
+            <p class="prod-name">Product Name Goes Here</p>
+            <p class="prod-price">$123 <span>$150</span></p>
+            <p class="prod-review">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <span>(99)</span>
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <script src="./app.js"></script>
   </body>
 </html>
