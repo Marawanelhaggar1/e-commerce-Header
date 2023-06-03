@@ -384,20 +384,18 @@ nav {
   margin-bottom: 10px;
 }
 
-.hero .offers img {
+.offers img {
   height: 100%;
   opacity: 0.8;
-  object-fit: cover;
   width: 100%;
-  vertical-align: middle;
 }
 
-.hero .offers .offer:hover img {
+.offers .offer:hover img {
   transform: scale(1.2) rotate(5deg);
   transition: 0.5s;
 }
 
-.hero .offers .offer .overlay {
+.offers .offer .overlay {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -406,38 +404,38 @@ nav {
   color: white;
 }
 
-.hero .offers h2 {
+.offers h2 {
   font-size: 20px;
   margin: 10px 0;
 }
 
-.hero .offers p {
+p {
   font-size: 15px;
 }
 
-.hero .offers button {
+button {
   background-color: #fee135;
   cursor: pointer;
   padding: 10px;
   border: 1px solid #fee135;
 }
 
-.hero .offers button:hover {
+button:hover {
   background-color: transparent;
   color: #fee135;
 }
 
-.hero .fade {
+.fade {
   animation-name: fade;
   animation-duration: 3s;
 }
 
 @keyframes fade {
   from {
-    opacity: 0.4;
+    opacity: 0.5;
   }
   to {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
 
@@ -465,22 +463,22 @@ nav {
 }
 
 /* CATEGORIES */
-.category .title {
+.title {
   margin: 1rem 3rem;
   color: #6c757d;
 }
 
-.category .title h1 {
+.title h1 {
   position: relative;
   font-size: 30px;
 }
 
-.category .title span {
+.title span {
   background-color: #eee;
   padding-right: 1rem;
 }
 
-.category .title h1 span::after {
+.title h1 span::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -541,6 +539,150 @@ nav {
   font-weight: 400;
   color: #6c757d;
   margin-top: 10px;
+}
+
+/* Products */
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 1rem;
+}
+
+.products .card {
+  background-color: white;
+}
+
+.products .card .image {
+  position: relative;
+  overflow: hidden;
+}
+
+.products .card .image img {
+  max-width: 100%;
+}
+
+.products .card:hover .image .overlay-actions {
+  display: block;
+  animation-name: movement;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+}
+
+@keyframes movement {
+  from {
+    top: 100%;
+  }
+  to {
+    top: 0;
+  }
+}
+
+.products .card:hover .image img {
+  transform: scale(1.2);
+  transition: 1s;
+}
+
+.products .card .image .overlay-actions {
+  display: none;
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  transition: 0.5s;
+}
+
+.products .card .image .overlay {
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background-color: white;
+  opacity: 0.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.products .card .image .prod-actions {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.products .card .image .prod-actions i {
+  padding: 8px;
+  border: 1px solid #3d464d;
+  font-size: 20px;
+  color: #3d464d;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.products .card .image .prod-actions i:hover {
+  color: #ffd900;
+  background-color: #3d464d;
+}
+
+.products .card .card-info {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.products .card .card-info p {
+  margin-top: 10px;
+}
+
+.products .card .card-info .prod-name {
+  color: #3d464d;
+  font-weight: bold;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.products .card .card-info .prod-name:hover {
+  color: #ffd900;
+}
+
+.products .card .card-info .prod-price {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.products .card .card-info .prod-price span {
+  color: #6c757d;
+  text-decoration: line-through;
+  font-size: 16px;
+  padding: 3px;
+}
+
+.products .card .card-info .prod-review i {
+  color: #ffd900;
+}
+.products .card .card-info .prod-review span {
+  color: #6c757d;
+  font-size: 13px;
+}
+
+/* offers 2 */
+
+.offers2 .offers {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  margin: 3rem 0;
+}
+
+.offers2 .offers .offer {
+  position: relative;
+  max-height: 100%;
+  overflow: hidden;
+
+  margin: 15px;
 }
 
 /* Responsive */
