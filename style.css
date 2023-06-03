@@ -409,7 +409,7 @@ nav {
   margin: 10px 0;
 }
 
-p {
+.offers p {
   font-size: 15px;
 }
 
@@ -683,6 +683,36 @@ button:hover {
   overflow: hidden;
 
   margin: 15px;
+}
+
+/* VENDORS */
+
+.vendors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  overflow-y: hidden;
+  margin: 1rem auto;
+  scroll-behavior: smooth;
+}
+
+.vendors::-webkit-scrollbar {
+  height: 6px;
+  display: none;
+}
+
+.vendors:hover::-webkit-scrollbar {
+  display: block;
+  transition: 0.5s ease-in;
+}
+
+.vendors::-webkit-scrollbar-thumb {
+  background-color: #a7a1a1;
+}
+
+.vendors img {
+  margin: 1rem;
 }
 
 /* Responsive */
